@@ -369,7 +369,9 @@ class MG_Dataset(Dataset):
                 "Adjs":adjs,
                 "Coords":coords,
                 "Zmats":zmats,
-                "Masks":masks
+                "Masks":masks,
+                'metal_ind': torch.Tensor(np.array([mg.metal_ind])).long(),
+                'coordinating_atom_inds': torch.Tensor(mg.coordinating_atom_inds).long()
                 }
 
 

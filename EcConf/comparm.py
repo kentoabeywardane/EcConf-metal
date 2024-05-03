@@ -10,7 +10,7 @@ class GPARMAS:
         self.if_chiral=False # modified from True by KA 5/2
         self.chiral_types=[ ChiralType.CHI_UNSPECIFIED, ChiralType.CHI_TETRAHEDRAL_CW, ChiralType.CHI_TETRAHEDRAL_CCW, ChiralType.CHI_OTHER,
                             ChiralType.CHI_TETRAHEDRAL, ChiralType.CHI_ALLENE, ChiralType.CHI_SQUAREPLANAR, ChiralType.CHI_TRIGONALBIPYRAMIDAL,ChiralType.CHI_OCTAHEDRAL]
-        self.max_atoms=51 # modified from 9 by KA 5/2
+        self.max_atoms=50 # modified from 9
         self.batchsize=50
         self.device='cuda'
         self.dim=(16,16)
