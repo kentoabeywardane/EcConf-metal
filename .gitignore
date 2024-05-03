@@ -1,3 +1,13 @@
+
+# GeomDrugs
+Origin_GeoDiff_Drugs/
+
+# Our metal data
+ligand_properties_unique_hash.csv
+
+# pytorch data
+*.pt
+
 # macs
 .DS_Store
 .vscode/

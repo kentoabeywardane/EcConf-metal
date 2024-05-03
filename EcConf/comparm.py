@@ -4,12 +4,13 @@ import json
 
 class GPARMAS:
     def __init__(self):
-        self.atom_types=[1,6,7,8,9,15,16,17,35,53]
+        # self.atom_types=[1,6,7,8,9,15,16,17,35,53]
+        self.atom_types=[1, 5, 6, 7, 8, 9, 15, 16, 17, 35, 53, 26] # modified by KA 5/2
         self.bond_types=[Chem.BondType.SINGLE,Chem.BondType.DOUBLE,Chem.BondType.TRIPLE,Chem.BondType.AROMATIC]
-        self.if_chiral=True
+        self.if_chiral=False # modified from True by KA 5/2
         self.chiral_types=[ ChiralType.CHI_UNSPECIFIED, ChiralType.CHI_TETRAHEDRAL_CW, ChiralType.CHI_TETRAHEDRAL_CCW, ChiralType.CHI_OTHER,
                             ChiralType.CHI_TETRAHEDRAL, ChiralType.CHI_ALLENE, ChiralType.CHI_SQUAREPLANAR, ChiralType.CHI_TRIGONALBIPYRAMIDAL,ChiralType.CHI_OCTAHEDRAL]
-        self.max_atoms=9
+        self.max_atoms=51 # modified from 9 by KA 5/2
         self.batchsize=50
         self.device='cuda'
         self.dim=(16,16)
